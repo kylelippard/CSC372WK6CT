@@ -5,9 +5,9 @@ public class Student {
     String address;
 
     Student() {
-
+        //Default constructor
     }
-
+    //initialized constructor
     public  Student(int rollNo, String firstName, String lastName, String address){
         this.rollNo = rollNo;
         this.firstName = firstName;
@@ -25,6 +25,8 @@ public class Student {
     public int GetRollNo() {
         return this.rollNo;
     }
+    public String GetAddress() {return this.address; };
+    //toString method.
     @Override
     public String toString() {
         return this.firstName.toString()+" "+this.lastName.toString()+"\n" +this.address+"\n" + this.rollNo+"\n"+"\n";
